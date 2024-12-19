@@ -1,0 +1,36 @@
+
+
+
+.notebook-header {
+  font-family: "Press Start 2P", monospace; /* Matches retro font */
+  background-color: #262626; /* Dark background for the header */
+  color: #96ffe3; /* Bright blue text for contrast */
+  padding: 10px 20px;
+  position: fixed; /* Sticks the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.5em;
+  border-bottom: 2px solid #96ffe3; /* Blue border for separation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.notebook-container {
+  transform: scale(1.3); /* Scale the notebook content */
+  transform-origin: top left;
+  margin-top: 60px; /* Space for the fixed header */
+}
+
+.nav-link {
+  color: #96ffe3; /* Bright blue text */
+  text-decoration: none; /* Removes underline */
+  font-size: 1.8em;
+  font-weight: bold;
+  transition: font-size 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  font-size: 2em;
+}
+

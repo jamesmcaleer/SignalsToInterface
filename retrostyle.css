@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: "Press Start 2P", monospace; /* Retro blocky terminal font */
+    margin: 0;
+    padding: 0;
+    background-color: #262626; /* Slightly lighter black for background */
+    color: #ffffff; /* Bright blue text for terminal look */
+  }
+  
+  /* Header Section */
+  .header {
+    padding: 20px;
+    background-color: #262626; /* Consistent dark background */
+    color: #ffffff; /* Bright blue text */
+    border-bottom: 2px solid #ffffff; /* Blue border for separation */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds space between the image and the text */
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 0; /* Square crop for retro effect */
+    border: 2px solid #ffffff; /* Blue border for retro look */
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .header-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 1.3em;
+    margin: 0 0 15px;
+    font-weight: bold; /* Make the text stand out */
+    color: #ffffff;
+  }
+  
+  .blog-name {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Terminal-style uppercase */
+    color: #96ffe3;
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center-align content */
+  }
+
+  .blog-name {
+      order: -1; /* Move the blog name to the top */
+      width: 100%; /* Make it span the full width */
+      text-align: center; /* Center-align for better readability */
+      margin-bottom: 15px; /* Add spacing below the blog name */
+  }
+
+  .header-info {
+      align-items: center; /* Center-align the profile and name */
+  }
+}
+
+  
+  .description {
+    font-size: 1em;
+    margin: 0 0 10px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+  
+  .links a {
+    margin-right: 15px;
+    color: #96ffe3; /* Bright blue links */
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Blog Container */
+  /* Blog Container */
+.blog-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex; /* Enables flex layout */
+  flex-wrap: wrap; /* Allows wrapping to the next line if space isn't enough */
+  gap: 15px; /* Adds space between entries */
+}
+
+/* Blog Entry */
+.blog-entry {
+  flex: 1 1 calc(50% - 15px); /* Each entry takes 50% width minus the gap */
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #ffffff; /* Dashed border for retro look */
+  border-radius: 0; /* Remove rounded corners */
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff; /* Bright blue text */
+  background-color: #262626; /* Dark background */
+  transition: background-color 0.3s;
+  box-sizing: border-box; /* Includes padding/border in width calculation */
+}
+
+.blog-entry:hover {
+  background-color: #323232; /* Slightly brighter background on hover */
+  color: #96ffe3;
+  border: 1px dashed #96ffe3;
+}
+
+  
+  .blog-title {
+    font-size: 1.5em;
+    margin: 0 0 5px;
+    /*color: #007bff; /* Bright blue title */
+  }
+  
+  .blog-description {
+    font-size: 1em;
+    /*color: #3399ff; /* Lighter blue for description */
+  }
+  
+  /* Terminal-style cursor effect for interactivity */
+  .blog-entry:hover::after {
+    content: "_"; /* Simulate blinking terminal cursor */
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }

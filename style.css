@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds space between the image and the text */
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .header-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 1.3em;
+    margin: 0 0 15px;
+    font-weight: normal;
+  }
+  
+  .blog-name {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    font-weight: bold;
+    
+  }
+
+  .description {
+    font-size: 1em;
+    margin: 0 0 10px;
+    font-weight: normal;
+  }
+
+  
+  .links a {
+    margin-right: 15px;
+    color: rgb(191, 191, 226);
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+    color: rgb(141, 141, 229);
+  }
+  
+  /* Blog Container */
+  .blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .blog-entry {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .blog-entry:hover {
+    background-color: #dfdfdf;
+  }
+  
+  .blog-title {
+    font-size: 1.5em;
+    margin: 0 0 5px;
+    color: #333;
+  }
+  
+  .blog-description {
+    font-size: 1em;
+    color: #666;
+  }
+
+  
+  
