@@ -17,9 +17,13 @@
 }
 
 .notebook-container {
-  transform: scale(1.3); /* Scale the notebook content */
-  transform-origin: top left;
   margin-top: 60px; /* Space for the fixed header */
+}
+@media (min-width: 768px) { /* Adjust the width as needed */
+  .notebook-container {
+    transform: scale(1.3); /* Scale the notebook content */
+    transform-origin: top left;
+  }
 }
 
 .nav-link {
