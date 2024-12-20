@@ -1,4 +1,8 @@
-
+p {
+  word-wrap: break-word; /* Wrap words that are too long */
+  overflow-wrap: break-word; /* Modern equivalent, ensures text wraps properly */
+  white-space: normal; /* Allows text to wrap normally */
+}
 
 
 .notebook-header {
@@ -37,4 +41,5 @@
 .nav-link:hover {
   font-size: 2em;
 }
+
 
